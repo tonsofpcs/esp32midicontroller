@@ -17,9 +17,9 @@ void midioff(channel, value){
 
 void midibtn(channel, value){
   if value == 1 {
-    midion(channel, 127)
+    midion(channel, 127);
   } else {
-    midioff(channel)
+    midioff(channel);
   }
 }
 
@@ -37,7 +37,7 @@ void loop() {
   //COMPARE VALUES TO _O AND SEND MIDI UPDATES
   for(i=0; i < 9, i++){
     if btn[i] != btn_o[i] {
-      midibutton(btn_m[i], btn[i])
+      midibutton(btn_m[i], btn[i]);
     }
     btn_o[i] = btn[i];
   }
