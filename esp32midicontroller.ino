@@ -1,18 +1,20 @@
+//TODO: add includes, remove default comments
+
 int tbar, fader[4], enc[4], shuttle, jog, btn[9];
 int tbar_o, fader_o[4], enc_o[4], shuttle_o, jog_o, btn_o[9];
 int tbar_m = 1, fader_m[4] = {2,3,4,5}, enc_m[4] = {6,7,8,9}, shuttle_m = 10, jog_m = 11, btn_m[9] = {12,13,14,15,16,17,18,19,20};
 int tbar_p = 1, fader_p[4] = {2,3,4,5}, enc_p[4][2] = {{6,7},{8,9},{10,11},{12,13}}, shuttle_p = 14, jog_p[2] = {15,16}, btn_p = 17;
 
 void midisend(channel, value){
-
+  //TODO: Code to send Midi control channel changes
 }
 
-void midion(channel){
-
+void midion(channel, value){
+  //TODO: code to send midi noteon
 }
 
-void midioff(channel, value){
-
+void midioff(channel){
+  //TODO: code to send midi noteoff
 }
 
 void midibtn(channel, value){
@@ -32,7 +34,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  //READ AND UPDATE VALUES
+  //TODO: READ AND UPDATE VALUES
 
   //COMPARE VALUES TO _O AND SEND MIDI UPDATES
   for(i=0; i < 9, i++){
